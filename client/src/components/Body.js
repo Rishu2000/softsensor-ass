@@ -15,10 +15,8 @@ const Body = () => {
     }, [])
 
     return (
-        <div style={{padding:"0 60px"}}>
-            <div style={{padding:"30px 40px"}}>
-                Body
-            </div>
+        <div style={{padding:"30px 40px"}}>
+            Body
         </div>
     )
 }
