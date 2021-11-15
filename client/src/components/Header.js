@@ -4,9 +4,11 @@ import {useNavigate} from "react-router-dom"
 
 const Header = () => {
 
+    let url = window.location.pathname;
     let navigate = useNavigate();
     function handleClick() {
-        navigate("/cart");
+        if(url === "/") return navigate("/cart");
+        return navigate("/");
       }
 
     return (
@@ -14,7 +16,9 @@ const Header = () => {
             <header>
                 <h2>Headers</h2>
                 <nav>
-                    <button onClick={handleClick}>Go to cart</button>
+                    <button onClick={handleClick}>
+                        {url === "/cart"?"Home":"Go to cart"}
+                    </button>
                 </nav>
             </header>
         </div>
