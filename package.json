@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Rishu2000/softsensor-ass/issues"
   },
-  "homepage": "https://github.com/Rishu2000/softsensor-ass#readme"
+  "homepage": "https://github.com/Rishu2000/softsensor-ass#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
