@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  background-color: #808080;
+  align-items: center;
+}
+
+header h2 {
+  color: #fff;
+}
+
+header nav button {
+  border: none;
+  padding: 10px 20px;
+  font-weight: 700;
+  background-color: #595959;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header nav button:hover {
+  background-color: #4d4d4d;
+}
