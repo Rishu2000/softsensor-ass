@@ -15,7 +15,7 @@ const Body = () => {
     }, [])
 
     return (
-        <div style={{padding:"30px 40px"}}>
+        <div style={{padding:"30px 40px", marginTop:"50px"}}>
             <h1 style={{textAlign:"center"}}>Products</h1>
                 <div style={{paddingTop:"20px"}}>
                     <div style={{backgroundColor:"#bfbfbf", borderRadius:"5px", padding:"20px", width:"20%"}}>

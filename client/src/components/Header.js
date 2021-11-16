@@ -12,7 +12,7 @@ const Header = () => {
       }
 
     return (
-        <div>
+        <div className="navbar">
             <header>
                 <h2>Headers</h2>
                 <nav>
