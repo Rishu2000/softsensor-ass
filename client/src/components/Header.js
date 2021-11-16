@@ -4,6 +4,7 @@ import {useNavigate} from "react-router-dom"
 
 const Header = () => {
 
+    // navigating to the home page and cart page.
     let url = window.location.pathname;
     let navigate = useNavigate();
     function handleClick() {

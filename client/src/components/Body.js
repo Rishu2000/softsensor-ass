@@ -16,9 +16,9 @@ const Body = () => {
     const [products, setProducts] = useState(myArray);
 
     useEffect(() => {
+        // Get the data from backend using axios.
         axios.get('http://localhost:3004/data')
             .then((response) => {
-                console.log(response.data);
                 myArray.push(...response.data);
                 setProducts([...myArray]);
             })
@@ -31,6 +31,7 @@ const Body = () => {
         <div style={{padding:"30px 40px", marginTop:"50px"}}>
             <h1 style={{textAlign:"center"}}>Products</h1>
                 <div style={{paddingTop:"20px", display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
+                    {/* Added all the products which are comming from backend. */}
                     {products.map((product, key) => (
                         <div style={{backgroundColor:"#bfbfbf", borderRadius:"5px", padding:"20px", width:"230px", marginBottom:"20px"}}>
                         <h3 style={{minHeight:"70px"}}>{product.title}</h3>

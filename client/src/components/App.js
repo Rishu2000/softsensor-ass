@@ -10,6 +10,7 @@ const App = () => {
     <div>
       <Header/>
       <div style={{padding:"0 60px"}}>
+        {/* Added route to switch between pages. */}
         <Routes>
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/" element={<Body/>}/>
